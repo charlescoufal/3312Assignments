@@ -1,0 +1,10 @@
+<h1>Power Result</h1>
+<p>@ViewData["PowerResult"]</p>>
+
+@{
+    int left = Convert.ToInt32(ViewData["Left"]);
+    int right = Convert.ToInt32(ViewData["Right"]);
+    int result = Math.Pow(left,right);
+}
+
+<p>@result</p>

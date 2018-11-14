@@ -1,0 +1,9 @@
+<h1>Floor Result</h1>
+<p>@ViewData["FloorResult"]</p>>
+
+@{
+    int number = Convert.ToInt32(ViewData["Number"]);
+    int result = Math.Floor(number);
+}
+
+<p>@result</p>

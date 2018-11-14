@@ -1,0 +1,9 @@
+<h1>Ceiling Result</h1>
+<p>@ViewData["CeilingResult"]</p>>
+
+@{
+    int number = Convert.ToInt32(ViewData["Number"]);
+    int result = Math.Ceiling(number);
+}
+
+<p>@result</p>
